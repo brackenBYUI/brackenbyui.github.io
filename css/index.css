@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces&family=Open+Sans&display=swap');
-
 body {
-    max-width: 800px;
+    max-width: 1000px;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -9,7 +7,7 @@ h1, h2 {
     font-family: 'Fraunces', serif;
 }
 
-.name-container {
+.header-container {
     background-color: #244F26;
     color: #FFFBDB;
     padding: 15px;
@@ -17,14 +15,12 @@ h1, h2 {
 }
 
 .name-title {
-    margin-left: 2.5em;
+    margin-left: 2em;
 }
 
-.image-container img {
+.header-container img {
     grid-column: 3;
-    position: absolute;
-    top: 20px;
-    left: 530px;
+    margin-right: 1em;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     height: 250px;
@@ -32,7 +28,6 @@ h1, h2 {
 }
 
 .main {
-    display: float;
     padding: 2em;
 }
 
