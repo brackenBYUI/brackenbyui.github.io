@@ -217,3 +217,9 @@ nav ul.hide {
     text-align: left;
 }
 
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+

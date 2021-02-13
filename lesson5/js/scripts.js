@@ -7,8 +7,6 @@ document.getElementById('today-date').textContent = new Date().toLocaleDateStrin
 
 const todayOptions = {day: 'long'}
 const todayDay = new Date().getDay();
-// .toLocaleDateString('en_US', todayOptions);
-console.log(todayDay)
 if (todayDay === 5) {
     document.getElementById('banner-container').style.display = 'block'
 } else {

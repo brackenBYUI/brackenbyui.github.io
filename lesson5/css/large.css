@@ -68,8 +68,4 @@
         width: auto;
         float: right;
     }
-
-    .article-container p {
-        position: inline;
-    }
 }
