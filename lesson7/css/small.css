@@ -221,12 +221,11 @@ nav ul.hide {
     justify-items: center;
 }
 
-.image-container picture {
+.image-container div {
     margin-bottom: 1rem;
     box-shadow: 0 2px 5px gray;
-    widows: 100%;
 }
 
-.image-container picture p {
+.image-container div p {
     text-align: center;
 }

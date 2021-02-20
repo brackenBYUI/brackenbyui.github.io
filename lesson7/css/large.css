@@ -75,7 +75,7 @@
         justify-items: center;
     }
 
-    .image-container picture:hover {
+    .image-container div:hover {
         box-shadow: 0 2px 15px gray;
     }
 }
