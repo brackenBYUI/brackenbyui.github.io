@@ -5,6 +5,7 @@ body {
 
 table {
     border-collapse: collapse;
+    box-shadow: 0 2px 15px gray;
 }
 
 td {
@@ -17,12 +18,14 @@ th {
     color: black;
     padding: 5px;
     border: 1px solid gray;
+    font-size: 1.5em;
 }
 
 tbody th {
     background-color: #628ca6;
     color: white;
     padding: 5px;
+    font-size: 1em;
 }
 
 tfoot tr td{
