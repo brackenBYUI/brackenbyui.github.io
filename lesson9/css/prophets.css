@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+}
+
+.cards {
+    background-color: 	#ededed;
+    padding: 1em;
+    display: grid;
+    grid-gap: .25em;
+    line-height: .5;
+    box-shadow: 0 2px 15px gray;
+}
+
+.cards section {
+    background-color: #7ca982;
+    border: 1px solid #1E382F;
+}
+
+h1 {
+    color: #1E382F;
+}
+
+h2 {
+    color: #1E382F;
+}
+
+img {
+    padding-bottom: .5em;
+}
+
+footer {
+    padding-top: 1em;
+}
