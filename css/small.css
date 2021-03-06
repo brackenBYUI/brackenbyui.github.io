@@ -229,3 +229,26 @@ nav ul.hide {
 .image-container div p {
     text-align: center;
 }
+
+.towns {
+    background-color: #e0eec6;
+    padding: 1em;
+    display: grid;
+    grid-gap: .25em;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.towns section {
+    background-color: #7ca982;
+    border: 1px solid #1E382F;
+}
+
+.towns p {
+    line-height: .5;
+}
+
+.towns img {
+    padding-bottom: .5em;
+    max-width: 100%;
+}

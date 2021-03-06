@@ -77,4 +77,8 @@
     .image-container div:hover {
         box-shadow: 0 2px 15px gray;
     }
+
+    .towns {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
