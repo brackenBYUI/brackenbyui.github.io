@@ -10,9 +10,12 @@
     <link rel="stylesheet" href="../css/small.css">
     <link rel="stylesheet" href="../css/medium.css">
     <link rel="stylesheet" href="../css/large.css">
-    <title>Supposition Weather Homepage</title>
+    <title>Preston Weather</title>
 </head>
 <body>
+    <div id="banner-container">
+        Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
+    </div>
     <header>
         <img src="../images/supposition-weather-icon.png" alt="Supposition Weather Icon"/>
         <section class="headings">
@@ -23,8 +26,8 @@
     </header>
     <nav>
         <ul id="primaryNav" class="hide">
-            <li><a href="index.html" class="active hide">Home</a></li>
-            <li><a href="../lesson10/preston-10.html">Preston</a></li>
+            <li><a href="../lesson9/index.html">Home</a></li>
+            <li><a href="preston-10.html" class="active hide">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
@@ -32,15 +35,30 @@
         </ul>
     </nav>
     <main class="clearfix">
+        <h2>Preston Idaho</h2>
         <div class="hero-container">
             <picture>
-                <source media="(max-width: 37.5em)" srcset="../images/preston/anklinOriginalSmallText.jpg">
-                <source media="(max-width: 65.5em)" srcset="../images/preston/anklinOriginalMediumText.jpg">
-                <source media="(min-width: 65.6em)" srcset="../images/preston/anklinOriginalLargeText.jpg">
+                <source media="(max-width: 37.5em)" srcset="../images/preston/anklinOriginalSmall.jpg">
+                <source media="(max-width: 65.5em)" srcset="../images/preston/anklinOriginalMedium.jpg">
+                <source media="(min-width: 65.6em)" srcset="../images/preston/anklinOriginalLarge.jpg">
                 <img src="../images/preston/anklinOriginalLarge.jpg" alt="mountain image">
             </picture>
+            <section class="weather-summary">
+             <h2>Weather Summary</h2>
+             <p>Current: <span id="current-weather"></span>&deg;F, <span id="current-desc"></span></p>
+             <p>High: <span id="day-high"></span>&deg;F</p>
+             <p>Wind Chill: <span id="wind-chill"></span> &deg;F</p>
+             <p>Humidity: <span id="humidity"></span>&percnt;</p>
+             <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+            </section>
            </div>
-        <div class="towns"></div>
+        <div class="day-forecast">
+            <h2>5 Day Forecast</h2>
+            <table>
+                <tr id="table-head"></tr>
+                <tr id="table-data"></tr>
+            </table>
+        </div>
         <div class="article-container clearfix">
             <h2>Article</h2>
             <div class="article-text">
@@ -64,6 +82,9 @@
     </main>
     <footer>
         <div class="contact-container">
+            <div class="contact-img">
+                <img src="../images/preston/preston-map.jpg" alt="preston map"/>
+            </div>
             <div class="contact-info">
                 <h2>Contact Information</h2>
                 <p>&#9993; placeHolder@email.com</p>
@@ -78,6 +99,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="../js/scripts.js"></script>
     <script src="../js/webFontLoad.js"></script>
-    <script src="js/towns.js"></script>
+    <script src="js/prestonapi.js"></script>
+    <script src="../js/windchill.js"></script>
 </body>
 </html>
