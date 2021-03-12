@@ -1,5 +1,0 @@
-@media only screen and (min-width: 65.5em) {
-    form {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}

@@ -11,13 +11,9 @@
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="../css/medium.css">
     <link rel="stylesheet" href="../css/large.css">
-    <link rel="stylesheet" href="css/large.css">
     <title>Storm center</title>
 </head>
 <body>
-    <div id="banner-container">
-        Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
-    </div>
     <header>
         <img src="../images/supposition-weather-icon.png" alt="Supposition Weather Icon"/>
         <section class="headings">
@@ -60,8 +56,8 @@
             </label>
             <label for="stormType">
                 Storm Type
-                <input list="stormType" name="stormType" id="stormTypes" id="stormType">
-                <datalist id="stormType">
+                <input list="stormTypes" id="stormType" name="stormType"/>
+                <datalist id="stormTypes">
                     <option value="Flash Flood">
                     <option value="Hail">
                     <option value="Hurricane">
@@ -87,20 +83,19 @@
                     <option value="10">
                 </datalist>
             </label>
+
             <label for="stormRegions">
                 Storm Region
-                <select list="stormRegion" name="stormRegion" id="stormRegions">
-                    <datalist id="stormRegion">
+                <select name="stormRegion" id="stormRegions">
                         <option value="" disabled selected>Select a Region...</option>
                         <option value="Preston">Preston</option>
                         <option value="Soda Springs">Soda Springs</option>
                         <option value="Fish Haven">Fish Haven</option>
-                    </datalist>
-                    </select>
+                </select>
             </label>
             
             <div class="radio">
-                <legend>User in danger</legend>
+                User in danger
                 <div class="selection">
                     <input type="radio" id="yes" name="yes" value="yes" checked> <label for="yes">Yes</label>
                 </div>
