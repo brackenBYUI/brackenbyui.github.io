@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Preston Weather page">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/small.css">
+    <link rel="stylesheet" href="../css/medium.css">
+    <link rel="stylesheet" href="../css/large.css">
+    <title>Weather Gallery</title>
+</head>
+<body>
+    <header>
+        <img src="../images/supposition-weather-icon.png" alt="Supposition Weather Icon"/>
+        <section class="headings">
+            <h1>Supposition Weather</h1>
+            <div class="motto">We guess the best we can</div>
+        </section>
+        <button onclick="toggleMenu()">&#9776;</button>
+    </header>
+    <nav>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html" class="active hide">Gallery</a></li>
+        </ul>
+    </nav>
+    <main class="clearfix">
+        <h2>Weather Gallery</h2>
+        <section class="image-container">
+                <div>
+                    <img src="http://placehold.jp/300x400.png" data-src="../images/gallery/nasa-weather-300.jpg" alt="Hurricane over land">
+                    <p>Hurricane come over land</p>
+                </div>
+                <div>
+                    <img src="http://placehold.jp/300x400.png" data-src="../images/gallery/lighting-field-300.jpg" alt="Lightning storm">
+                    <p>Lightning storm in the distance</p>
+                </div>
+                <div>
+                    <img src="http://placehold.jp/300x400.png" data-src="../images/gallery/lightning-storm-300.jpg" alt="Lightning storm">
+                    <p>Lightning shining like the sun</p>
+                </div>
+                <div>
+                    <img src="http://placehold.jp/300x400.png" data-src="../images/gallery/forest-fog-300.jpg" alt="Fog in forest">
+                    <p>Fog over the forest</p>
+                </div>
+                <div>
+                    <img src="http://placehold.jp/300x400.png" data-src="../images/gallery/snow-300.jpg" alt="Snow fall">
+                    <p>Snow fall</p>
+                </div>
+                <div>
+                    <img src="http://placehold.jp/300x400.png" data-src="../images/gallery/moon-300.jpg" alt="Moon over clouds">
+                    <p>Moon showing over clouds</p>
+                </div>
+                <div>
+                    <img src="http://placehold.jp/300x400.png" data-src="../images/gallery/forest-road-300.jpg" alt="Fog in forest">
+                    <p>Fog on forest road</p>
+                </div>
+                <div>
+                    <img src="http://placehold.jp/300x400.png" data-src="../images/gallery/fog-300.jpg" alt="Fog in town square">
+                    <p>Fog in town square</p>
+                </div>
+                <div>
+                    <img src="http://placehold.jp/300x400.png" data-src="../images/gallery/forest-300.jpg" alt="Cloudy day in forest">
+                    <p>Cloudy day in forest</p>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>&#9993; placeHolder@email.com</p>
+                <p>Instagram</p>
+            </div>
+        </div>
+        <div class="legal-footer">
+            <p>&copy; Supposition Weather | Bracken Doney | Idaho</p>
+            <div class="date">Today's Date: <span id="today-date"></span></div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="../js/webFontLoad.js"></script>
+    <script src="../js/scripts.js"></script>
+    <script src="../js/lazy-load.js"></script>
+</body>
+</html>
