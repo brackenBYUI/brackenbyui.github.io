@@ -8,5 +8,6 @@ img {
   } 
   
   body {
+      display: grid;
       text-align: center;
   }
