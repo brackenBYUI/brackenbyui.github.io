@@ -1,5 +1,15 @@
 const newURL = 'https://api.openweathermap.org/data/2.5/weather?id=5607916&appid=fc01f49750cab6700d6ea5f55cc7936a&units=imperial';
 
+function windChill(temp, wind) {
+    if (temp <= 50 && wind > 3) {
+        let windPower = Math.pow(wind, .16);
+        let windChill = 35.74 + .6215 * temp - 35.75 * windPower + .4275 * temp * windPower;
+        return Math.round(windChill);
+    } else {
+        return "N/A";
+    }
+}
+
 fetch(newURL)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -9,6 +19,7 @@ fetch(newURL)
          document.getElementById('day-high').textContent = Math.round(jsObject.main.temp_max);
          document.getElementById('humidity').textContent = Math.round(jsObject.main.humidity);
          document.getElementById('wind-speed').textContent = Math.round(jsObject.wind.speed);
+         document.getElementById('wind-chill').textContent = windChill(jsObject.main.temp, jsObject.wind.speed)
     })
     .catch(e => {
         console.error(e);
