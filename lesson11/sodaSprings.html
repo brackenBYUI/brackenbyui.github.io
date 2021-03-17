@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Preston Weather page">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Preston Weather</title>
+</head>
+<body>
+    <header>
+        <img src="images/supposition-weather-icon.png" alt="Supposition Weather Icon"/>
+        <section class="headings">
+            <h1>Supposition Weather</h1>
+            <div class="motto">We guess the best we can</div>
+        </section>
+        <button onclick="toggleMenu()">&#9776;</button>
+    </header>
+    <nav>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodaSprings.html" class="active hide">Soda Springs</a></li>
+            <li><a href="fishHaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main class="clearfix">
+        <h2>Soda Springs</h2>
+        <div class="hero-container">
+            <picture>
+                <source media="(max-width: 37.5em)" srcset="images/sodaSprings/anklinOriginalSmall.jpg">
+                <source media="(max-width: 65.5em)" srcset="images/sodaSprings/anklinOriginalMedium.jpg">
+                <source media="(min-width: 65.6em)" srcset="images/sodaSprings/anklinOriginalLarge.jpg">
+                <img src="images/sodaSprings/anklinOriginal.jpeg" alt="mountain image">
+            </picture>
+            <section class="weather-summary">
+             <h2>Weather Summary</h2>
+             <p>Current: <span id="current-weather"></span>&deg;F, <span id="current-desc"></span></p>
+             <p>High: <span id="day-high"></span>&deg;F</p>
+             <p>Wind Chill: <span id="wind-chill"></span> &deg;F</p>
+             <p>Humidity: <span id="humidity"></span>&percnt;</p>
+             <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+            </section>
+            <section class="upcoming-events">
+                <h2>Upcoming Events:</h2>
+            </section>
+           </div>
+        <div class="day-forecast">
+            <h2>5 Day Forecast</h2>
+            <table>
+                <tr id="table-head"></tr>
+                <tr id="table-data"></tr>
+            </table>
+        </div>
+        <div class="article-container clearfix">
+            <h2>Article</h2>
+            <div class="article-text">
+                <img src="images/sodaSprings/pexels-simon-migaj-949193.jpg" alt="view from cave"/>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consequat purus est, nec rhoncus
+                     tortor sodales eu. Morbi a congue orci. In hac habitasse platea dictumst. Morbi commodo imperdiet eleifend. 
+                     Aenean tristique est nisl, vel tempus nunc gravida ut. Morbi ut velit varius, volutpat sapien eget, pellentesque ipsum. 
+                     Quisque at posuere arcu, sit amet aliquam nulla. In euismod dolor magna, in efficitur nisi cursus non. Sed posuere velit 
+                     felis, eu tempor augue vulputate et. Mauris vitae augue ut tellus pellentesque accumsan. 
+                     In mollis lectus ut ligula fringilla, non laoreet ex efficitur. Praesent porttitor mauris sit amet mi aliquet, ornare 
+                     pretium nulla facilisis. Nam iaculis, sem sit amet consequat eleifend, ex velit feugiat nisl, accumsan dignissim erat
+                     urna id elit. Nam bibendum metus vulputate, commodo lectus ut, interdum purus. Donec rhoncus, diam in bibendum mattis, 
+                     dolor sapien auctor neque, nec fermentum tellus augue in tellus. Mauris fermentum eros tempor leo lobortis fringilla. Sed 
+                     porttitor sollicitudin elit, eu tempus magna lacinia in. Vestibulum mattis pulvinar consequat. Suspendisse ut gravida eros, 
+                     vitae efficitur leo. Vestibulum gravida nulla ut aliquet commodo. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                     Curabitur nec malesuada nisl, in feugiat dolor. Fusce lacinia nisl mi, a tincidunt arcu pretium ac. Donec egestas quam id dui 
+                     blandit, et faucibus eros efficitur. Suspendisse in erat at ante varius egestas. Duis arcu massa, luctus sit amet leo nec, 
+                     dignissim fringilla neque.</p>
+            </div>  
+        </div>
+    </main>
+    <footer>
+        <div class="contact-container">
+            <div class="contact-img">
+                <img src="images/sodaSprings/soda-springs-map.jpg" alt="Soda Springs map"/>
+            </div>
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>&#9993; placeHolder@email.com</p>
+                <p>Instagram</p>
+            </div>
+        </div>
+        <div class="legal-footer">
+            <p>&copy; Supposition Weather | Bracken Doney | Idaho</p>
+            <div class="date">Today's Date: <span id="today-date"></span></div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/webFontLoad.js"></script>
+    <script src="js/sodaSpringsApi.js"></script>
+    <script src="js/windchill.js"></script>
+</body>
+</html>

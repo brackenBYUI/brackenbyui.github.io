@@ -7,7 +7,7 @@ fetch(requestURL)
     .then(function (jsonObject) {
         const towns = jsonObject.towns;
 
-        console.log(towns)
+        // console.log(towns)
         
         for (let i = 0; i < towns.length; i++) {
             if (towns[i].name === 'Fish Haven' || towns[i].name === 'Preston' || towns[i].name === 'Soda Springs') {

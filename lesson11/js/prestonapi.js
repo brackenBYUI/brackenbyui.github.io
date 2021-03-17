@@ -47,48 +47,73 @@ fetch(newURL)
 //         }
 //     })
 
-    const apiURL = `https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=fc01f49750cab6700d6ea5f55cc7936a&units=imperial`;
+const apiURL = `https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=fc01f49750cab6700d6ea5f55cc7936a&units=imperial`;
 
-    fetch(apiURL)
-        .then((response) => response.json())
-        .then((jsObject) => {
-            // console.log(jsObject)
-            // let table = document.createElement('table');
-            // let tableH = document.createElement('tr');
-            // let tableB = document.createElement('tr');
+fetch(apiURL)
+    .then((response) => response.json())
+    .then((jsObject) => {
+        // console.log(jsObject)
+        // let table = document.createElement('table');
+        // let tableH = document.createElement('tr');
+        // let tableB = document.createElement('tr');
 
-            // table.appendChild(tableH);
-            // table.appendChild(tableB);
+        // table.appendChild(tableH);
+        // table.appendChild(tableB);
 
-            // document.getElementsByClassName('day-forecast').appendChild(table);
+        // document.getElementsByClassName('day-forecast').appendChild(table);
 
-            jsObject.list.forEach(e =>{
-                if(e.dt_txt.includes('18:00:00')) {
-                    // console.log(e)
-                    const imageSrc = 'https://openweathermap.org/img/w/' + e.weather[0].icon + '.png';
-                    const desc = e.weather[0].description;
+        jsObject.list.forEach(e =>{
+            if(e.dt_txt.includes('18:00:00')) {
+                // console.log(e)
+                const imageSrc = 'https://openweathermap.org/img/w/' + e.weather[0].icon + '.png';
+                const desc = e.weather[0].description;
+
+                let tableHead = document.createElement('th');
+                let tableData = document.createElement('td');
+                let tableImg = document.createElement('img');
+                let tableDiv = document.createElement('div');
+                let tempSpan = document.createElement('span');
+                let day = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+                let timestamp = e.dt;
+                let date = new Date(timestamp * 1000);
+                tableHead.textContent = day[date.getDay()]; 
+                tempSpan.textContent = Math.round(e.main.temp_max) + `\u00B0F`;
+                tableImg.setAttribute('src', imageSrc);
+                tableImg.setAttribute('alt', desc);
+                tableDiv.appendChild(tableImg);
+                tableData.appendChild(tableDiv);
+                tableData.appendChild(tempSpan);
     
-                    let tableHead = document.createElement('th');
-                    let tableData = document.createElement('td');
-                    let tableImg = document.createElement('img');
-                    let tableDiv = document.createElement('div');
-                    let tempSpan = document.createElement('span');
-                    let day = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-                    let timestamp = e.dt;
-                    let date = new Date(timestamp * 1000);
-                    tableHead.textContent = day[date.getDay()]; 
-                    tempSpan.textContent = Math.round(e.main.temp_max) + `\u00B0F`;
-                    tableImg.setAttribute('src', imageSrc);
-                    tableImg.setAttribute('alt', desc);
-                    tableDiv.appendChild(tableImg);
-                    tableData.appendChild(tableDiv);
-                    tableData.appendChild(tempSpan);
-        
-                    document.getElementById('table-head').appendChild(tableHead);
-                    document.getElementById('table-data').appendChild(tableData);
-                }
-                
-            })
+                document.getElementById('table-head').appendChild(tableHead);
+                document.getElementById('table-data').appendChild(tableData);
+            }
+            
         })
+    })
+
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+fetch(requestURL)
+    .then(function (response) {
+        return response.json();
+    }) 
+    .then(function (jsonObject) {
+        const towns = jsonObject.towns;
+
+        // console.log(towns)
+        
+        for (let i = 0; i < towns.length; i++) {
+            if (towns[i].name === 'Preston') {
+                towns[i].events.forEach(e => {
+                    let event = document.createElement('p');
+
+                    event.textContent = e;
+
+                    document.querySelector('.upcoming-events').appendChild(event);
+
+                })
+            }
+        }
+    })
 
 
