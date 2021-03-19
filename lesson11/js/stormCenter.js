@@ -3,7 +3,7 @@ function adjustRating(rating) {
 }
 
 function onSubmit(e) {
-    window.location.href = "/lesson8/thanks.html"
+    window.location.href = "thanks.html"
     e.preventDefault();
 }
 

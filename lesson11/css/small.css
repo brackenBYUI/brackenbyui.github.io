@@ -222,6 +222,11 @@ nav ul.hide {
     justify-items: center;
 }
 
+.image-placeholder {
+    height: 400px;
+    width: 300px;
+}
+
 .image-container div {
     margin-bottom: 1rem;
     box-shadow: 0 2px 5px gray;
