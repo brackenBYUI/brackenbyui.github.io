@@ -1,0 +1,46 @@
+{
+    "business": [
+      {
+        "name": "Franklin County Medical Center",
+        "photo": "medicalCenter.jpg",
+        "number": "(208) 852-0137",
+        "website": "https://www.fcmc.org/"
+      },
+      {
+        "name": "Preston Golf and Country Club",
+        "photo": "countryClub.jpg",
+        "number": "(208) 852-2408",
+        "website": "https://prestonidahogolf.com/"
+      },
+      {
+        "name": "Stokes Market",
+        "photo": "stokesMarket.jpg",
+        "number": "(208) 852-3190",
+        "website": "https://stokesgrocery.com/"
+      },
+      {
+        "name": "Papa Jay's Inc",
+        "photo": "papaJay.jpg",
+        "number": "(208) 747-3772",
+        "website": "https://papajays.com/"
+      },
+      {
+        "name": "Fellows Chiropractic",
+        "photo": "fellowsChiro.jpg",
+        "number": "(208) 852-2240",
+        "website": "http://www.fellowschiropractic.com/index"
+      },
+      {
+        "name": "Pop 'N Pins & Island Bowl",
+        "photo": "popNPins.jpg",
+        "number": "(208) 425-6128",
+        "website": "https://popnpins.com/"
+      },
+      {
+        "name": "Yardmaster Sprinklers",
+        "photo": "yardmaster.jpg",
+        "number": "(435) 915-6587",
+        "website": "https://www.yardmasterservices.com/"
+      }
+    ]
+  }

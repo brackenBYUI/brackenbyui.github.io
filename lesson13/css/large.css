@@ -1,0 +1,66 @@
+@media only screen and (min-width: 68.75em) {
+    header {
+        grid-gap: 10%;
+    }
+
+    header button {
+        display: none;
+    }
+
+    nav {
+        text-align: right;
+    }
+
+    nav ul.hide {
+        display: flex;
+    }
+
+	nav ul li { 
+        flex: 1 1 100%; 
+    }
+	
+	nav a {
+		font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+
+    header img {
+        height: 120px;
+        width: auto;
+        background-color: transparent;
+    }
+
+    .business {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .adds {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10%;
+    }
+
+    .call-to-action {
+        position: absolute;
+        top: 200px;
+        left: 100px;
+        background: radial-gradient(#eee, #ccdbdc);
+        border: 1px solid #000;
+        padding: 1.5rem;
+        box-shadow: 0 0 30px #111;
+        opacity: .8;
+        padding: 5px 15px;
+    }
+
+    .weather-events {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10%;
+    }
+}

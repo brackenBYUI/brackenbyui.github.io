@@ -10,36 +10,75 @@
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
-    <title>Supposition Weather Homepage</title>
+    <title>Preston Chamber of Commerce</title>
 </head>
 <body>
-    <nav>
+    <header>
         <img src="images/preston-chamber-of-commerce.png" alt="Preston Chamber of Commerce Icon"/>
-        <ul id="primaryNav" class="hide">
-            <li><a href="index.html" class="active hide">Home</a></li>
-            <li><a href="city.html">City</a></li>
-            <li><a href="join.html">Join</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <nav>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="city.html">City</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+   
     <main class="clearfix">
         <div class="hero-container">
             <picture>
-                <source media="(max-width: 37.5em)" srcset="">
-                <source media="(max-width: 65.5em)" srcset="">
-                <source media="(min-width: 65.6em)" srcset="">
-                <img src="" alt="">
+                <source media="(max-width: 37.5em)" srcset="images/preston-cover-small.jpg">
+                <source media="(max-width: 65.5em)" srcset="images/preston-cover-medium.jpg">
+                <source media="(min-width: 65.6em)" srcset="images/preston-cover.jpg">
+                <img src="images/preston-cover.jpg" alt="Lake with mountains">
             </picture>
-           </div>
+            <section class="call-to-action">
+                <h2>Join us</h2>
+                <p>Build value in your business <br>and the community</p>
+                <a href="join.html">Add Your Business</a>
+            </section>
+        </div>
+           <div class="article-container clearfix">
+            <h2>About Preston's Chamber</h2>
+            <div class="article-text">
+                <p>Preston Area Chamber of Commerce promotes the financial and industrial pastimes of Franklin County for the prosperity of participants and the community. We additionally sell enterprise pastimes held in usual places with the prolonged vicinity of Cache Valley.</p>
+                <p>Preston, Idaho, positioned in Franklin County, is an outstanding area to visit. With many particular activities and see, the surroundings is stunning and the sports are a blast. Most importantly, it's miles one of the excellent locations within the global to stay and build a family. People right here are pleasant and helpful.</p>
+                <p>We have outstanding schools, a tremendous library, educated clinical employees and facilities, and compassionate government, all of whom are equipped and inclined to help. Recreation is all round us, and the humanities are a robust  part of our community. Everything you want for a well-balanced lifestyles is right here, consisting of extensive style of non secular agencies and sports.</p>
+            </div>  
+        </div>
+        <div class="adds"></div>
+        <section class="weather-events">
+            <div class="current-weather">
+                <h2>Current Weather</h2>
+                 <p>Current: <span id="current-weather"></span>&deg;F, <span id="current-desc"></span></p>
+                 <p>Feels Like: <span id="feels-like"></span>&deg;F</p>
+                 <p>Humidity: <span id="humidity"></span>&percnt;</p>
+                 <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+                 <p>Wind Chill: <span id="wind-chill"></span> &deg;F</p>
+            </div>
+            <section class="events">
+                <h2>Upcoming Events</h2>
+                <p>April: Child Abuse Prevention Month</p>
+                <p>April 9 6 PM: Floral Ladies Night</p>
+                <p>April 9 - April 10: King Kong vs. Godzilla Movie</p>
+                <p>April 14 8:30 PM: Preston Chamber meeting</p>
+                <p>April 28 8:30 PM: Preston Chamber meeting</p>
+            </section>
+        </section>
+        
     </main>
     <footer>
         <div class="contact-container">
             <div class="contact-info">
                 <h2>Contact Information</h2>
-                <p>&#9993; placeholder@email.com</p>
-                <p>Instagram</p>
-                <p>Facebook</p>
+                <ul>
+                    <li><a href="mailto:info@prestonchamber.org">&#9993; Email Us</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/PrestonAreaChamber/" target="_blank">Facebook</a></li>
+                </ul>
             </div>
         </div>
         <div class="legal-footer">
@@ -49,6 +88,8 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/homeBusiness.js"></script>
+    <script src="js/weather.js"></script>
     <script src="js/webFontLoad.js"></script>
 </body>
 </html>
