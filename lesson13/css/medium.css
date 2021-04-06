@@ -1,0 +1,10 @@
+@media (min-width: 46.875em) {
+    .business {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .adds {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

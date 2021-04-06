@@ -145,7 +145,7 @@ nav {
     padding: 1.5rem;
     box-shadow: 0 0 10px #111;
     opacity: .8;
-    padding: 5px 15px;
+    padding: 5px 15px 15px;
     background: radial-gradient(#eee, #6c756b);
 }
 
@@ -178,8 +178,12 @@ nav {
 
 .call-to-action {
     background-color: #ccdbdc;
-    padding: 1px 20px;
+    padding: 1px 20px 15px;
     text-align: center;
+}
+
+.call-to-action h2 {
+    margin-bottom: 0;
 }
 
 .call-to-action a {
@@ -200,7 +204,7 @@ nav {
     padding: 1.5rem;
     box-shadow: 0 0 10px #111;
     opacity: .8;
-    padding: 5px 15px;
+    padding: 5px 15px 15px;
     background: radial-gradient(#eee, #6c756b);
 }
 
@@ -223,6 +227,26 @@ nav {
 
 .weather-events {
     display: grid;
+}
+
+.mobile-menu {
+    display: inline-block;
+    position: absolute;
+    background-color: #fff;
+    width: 288px;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.mobile-menu li {
+    background-color: #364B96;
+}
+
+#close-nav {
+    color: white;
+    text-align: right;
 }
 
 form {

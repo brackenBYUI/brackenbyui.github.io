@@ -15,14 +15,15 @@
 <body>
     <header>
         <img src="images/preston-chamber-of-commerce.png" alt="Preston Chamber of Commerce Icon"/>
-        <button onclick="toggleMenu()">&#9776;</button>
+        <button onclick="toggleMenu()" id="hamburger-menu">&#9776;</button>
         <nav>
             <ul id="primaryNav" class="hide">
-                <li><a href="index.html">Home</a></li>
+                <li class="hide-desktop"><button id="close-nav" onclick="toggleMenu()">&times;</button></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="city.html">City</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>

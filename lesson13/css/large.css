@@ -56,11 +56,15 @@
         padding: 1.5rem;
         box-shadow: 0 0 30px #111;
         opacity: .8;
-        padding: 5px 15px;
+        padding: 5px 15px 15px;
     }
 
     .weather-events {
         grid-template-columns: repeat(2, 1fr);
         gap: 10%;
+    }
+
+    .hide-desktop {
+        display: none;
     }
 }
