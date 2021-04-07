@@ -7,4 +7,31 @@
     .adds {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .preston-rodeo {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+    }
+
+    .preston-rodeo img {
+        justify-self: end;
+    }
+
+    .napoleon-dynamite {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+    }
+
+    .napoleon-dynamite img {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .napoleon-dynamite p {
+        grid-column: 2 / 3;
+    }
+
+    .contact-page-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

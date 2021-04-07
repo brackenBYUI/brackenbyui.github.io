@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Preston Weather page">
+    <meta name="description" content="Preston Chamber of Commerce Contact page">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
@@ -28,8 +28,25 @@
         </nav>
     </header>
    
-    <main class="clearfix">
+    <main class="clearfix contact-page-container">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23682.88543550601!2d-111.89783455563735!3d42.09974561912198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1617657719472!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div>
+            <form>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name..">
+          
+              <label for="number">Phone Number</label>
+              <input type="text" id="number" name="phoneNumber" placeholder="Your Phone Number..">
+
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="example@ex.com">
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+          
+              <input type="submit" value="Submit">
+            </form>
+          </div>
     </main>
     <footer>
         <div class="contact-container">

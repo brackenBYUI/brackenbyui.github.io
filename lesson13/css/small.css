@@ -25,6 +25,11 @@ footer {
     margin: 0 auto;
 }
 
+.city-main {
+    max-width: 1200px;
+    margin: auto;
+}
+
 .date {
     padding: 10px;
     color: #CCDBDC;
@@ -247,6 +252,39 @@ nav {
 #close-nav {
     color: white;
     text-align: right;
+}
+
+.preston-rodeo {
+    display: grid;
+    margin: 1em;
+}
+
+.preston-rodeo img {
+    height: auto;
+    width: 100%;
+}
+
+.napoleon-dynamite {
+    display: grid;
+    margin: 1em;
+}
+
+.napoleon-dynamite img {
+    height: auto;
+    width: 100%;
+}
+
+.contact-page-container {
+    display: grid;
+}
+
+.contact-page-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#subject {
+    height: 200px;
 }
 
 form {
