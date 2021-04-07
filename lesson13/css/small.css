@@ -19,7 +19,7 @@ header {
 footer {
     grid-area: footer;
     text-align: center;
-    font-size: .7rem;
+    font-size: .9rem;
     background-color: #CCDBDC;
     padding: 0;
     margin: 0 auto;

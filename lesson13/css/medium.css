@@ -38,4 +38,8 @@
     .board-of-directors {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    #subject {
+        width: 300px;
+    }
 }
