@@ -34,4 +34,8 @@
     .contact-page-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .board-of-directors {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

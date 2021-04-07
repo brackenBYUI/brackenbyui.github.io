@@ -59,6 +59,10 @@ h2, h3 {
 	color: #364B96;
 }
 
+h4 {
+    color: #364B96;
+}
+
 header button {
     margin: .2rem 2%;
     background-color: transparent;
@@ -125,12 +129,29 @@ nav {
     overflow: hidden;
 }
 
+.contact-page-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
 .contact-info ul li {
     margin-bottom: 10px;
 }
 
 .contact-info ul li a {
     text-decoration: none;
+    color: #364B96;
+}
+
+.contact-page-info ul li a {
+    text-decoration: none;
+    color: #364B96;
+}
+
+.contact-page-info ul li p {
     color: #364B96;
 }
 
@@ -276,6 +297,7 @@ nav {
 
 .contact-page-container {
     display: grid;
+    margin-bottom: 1em;
 }
 
 .contact-page-container iframe {
@@ -285,6 +307,10 @@ nav {
 
 #subject {
     height: 200px;
+}
+
+.board-of-directors {
+    display: grid;
 }
 
 form {

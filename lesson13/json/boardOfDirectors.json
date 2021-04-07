@@ -1,0 +1,34 @@
+{
+    "board": [
+      {
+        "name": "Michelle Mcneely",
+        "position": "President",
+        "number": "208-852-6621"
+      },
+      {
+        "name": "Preston Rutter",
+        "position": "Vice President",
+        "number": "208-852-6711"
+      },
+      {
+        "name": "Tamara Harris",
+        "position": "Secretary",
+        "number": "208-852-6621"
+      },
+      {
+        "name": "Cody Swainston",
+        "position": "Social Media",
+        "number": "208-852-6711"
+      },
+      {
+        "name": "Koltyn Hobbs",
+        "position": "Treasurer",
+        "number": "208-852-6621"
+      },
+      {
+        "name": "Todd Goodsell",
+        "position": "Member",
+        "number": "208-852-6711"
+      }
+    ]
+  }
