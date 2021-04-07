@@ -113,6 +113,10 @@ nav {
     display: none;
 }
 
+.hero-container {
+    margin-top: 1em;
+}
+
 .hero-container img {
     height: auto;
     width: 100%;
