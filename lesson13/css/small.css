@@ -317,6 +317,10 @@ nav {
     display: grid;
 }
 
+#view-buttons {
+    display: none;
+}
+
 form {
     justify-content: center;
     margin : 0 auto;
